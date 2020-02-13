@@ -1,25 +1,10 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  background-color: #f2f2f2;
+html {
+    font-size: 62.5%;
 }
 
-.movie-card {
-  background-color: #fff;
-  border: 0;
-  box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
-    0 2px 4px rgba(0, 0, 0, 0.24);
-  padding: 1rem;
-  cursor: pointer;
-  position: relative;
-  margin: 1rem auto;
-}
-
-.movie-director {
-  padding: 4px 0;
-  font-size: 0.8rem;
-}
+a {text-decoration: none;}
+a:hover {text-decoration: none;}
+a:visited {text-decoration: none;}
 
 .saved-list {
   background-color: #fff;
@@ -53,20 +38,50 @@ body {
   width: 75%;
   margin: 1rem auto;
 }
-.save-button {
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  border: 1px solid grey;
-  padding: 5px 10px;
-  background-color: lightseagreen;
-}
-.save-button:hover {
-  background-color: green;
-  color: white;
+
+.btn {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
-.home-button {
-  padding: 5px 10px;
-  background-color: lightskyblue;
+.page-container {
+    max-width: 980px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.card-container {
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 200px;
+    height: 325px;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgb(16, 111, 200);
+}
+
+.card-title-2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: rgb(16, 111, 200);
+}
+
+.card-btn {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 160px;
 }
