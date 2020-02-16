@@ -2,41 +2,68 @@ html {
     font-size: 62.5%;
 }
 
-a {text-decoration: none;}
-a:hover {text-decoration: none;}
-a:visited {text-decoration: none;}
+body {
+    background-color: #edf2f7;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+*,
+::after,
+::before {
+    border-width: 0;
+    border-style: solid;
+    border-color: #e2e8f0;
+}
 
 .saved-list {
-  background-color: #fff;
-  border: 0;
-  box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
-    0 2px 4px rgba(0, 0, 0, 0.24);
-  padding: 1rem;
-  cursor: pointer;
-  position: relative;
-  margin: 1rem auto;
-  width: 75%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    background-color: #fff;
+    border: 0;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, .1), 0 10px 10px -5px rgba(0, 0, 0, .04);
+    padding: 1rem;
+    cursor: pointer;
+    position: relative;
+    margin: 1rem auto;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .saved-list h3 {
-  margin-right: 10px;
+    margin-right: 10px;
 }
 
 .saved-movie {
-  margin: 0 10px;
+    margin: 0 10px;
 }
+
 .saved-active {
-  color: blue;
-  border: 1px solid grey;
-  padding: 5px;
+    color: blue;
+    border: 1px solid grey;
+    padding: 5px;
 }
+
 .save-wrapper {
-  position: relative;
-  width: 75%;
-  margin: 1rem auto;
+    position: relative;
+    width: 75%;
+    margin: 1rem auto;
+}
+
+.save-button {
+    position: absolute;
+    top: 25px;
+    right: 25px;
 }
 
 .btn {
@@ -54,16 +81,21 @@ a:visited {text-decoration: none;}
 
 .card-container {
     justify-content: space-evenly;
+    margin-top: 60px;
 }
 
 .card {
     width: 200px;
-    height: 325px;
+    height: 300px;
     margin-right: 20px;
     margin-top: 20px;
     padding: 20px;
+    border: 0;
     color: #333;
+    background-color: #fff;
     text-align: center;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, .1), 0 10px 10px -5px rgba(0, 0, 0, .04);
+    border-radius: .5rem;
 }
 
 .card-title {
@@ -84,4 +116,21 @@ a:visited {text-decoration: none;}
     bottom: 20px;
     left: 20px;
     width: 160px;
+}
+
+nav a {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+nav a.active {
+    font-size: 1.2rem;
+    color: rgb(10, 136, 41);
+    font-weight: 700;
+}
+
+nav a:hover {
+    font-size: 1.2rem;
+    color: rgb(7, 41, 104);
+    font-weight: 700;
 }

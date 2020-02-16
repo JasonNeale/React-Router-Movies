@@ -3,7 +3,7 @@ import axios from 'axios'
 
 import MovieCard from './MovieCard'
 
-const MovieList = props => {
+const MovieList = (props) => {
     const [movies, setMovies] = useState([])
     
     useEffect(() => {
