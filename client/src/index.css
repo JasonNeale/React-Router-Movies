@@ -60,10 +60,9 @@ a:visited {
     margin: 1rem auto;
 }
 
-.save-button {
-    position: absolute;
-    top: 25px;
-    right: 25px;
+.button-row {
+    justify-content: center;
+    padding: 40px;
 }
 
 .btn {
@@ -98,14 +97,48 @@ a:visited {
     border-radius: .5rem;
 }
 
+.card-big {
+    width: auto;
+    max-width: 500px;
+    height: auto;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 40px;
+    border: 0;
+    color: #333;
+    background-color: #fff;
+    text-align: left;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, .1), 0 10px 10px -5px rgba(0, 0, 0, .04);
+    border-radius: .5rem;
+}
+
 .card-title {
     font-size: 1.6rem;
     font-weight: 600;
     color: rgb(16, 111, 200);
 }
 
+.title-row {
+
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.card-title-big {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: rgb(47, 47, 47);
+    text-decoration: underline;
+}
+
 .card-title-2 {
     font-size: 1.3rem;
+    font-weight: 400;
+    color: rgb(16, 111, 200);
+}
+
+.card-title-2-big {
+    font-size: 1.8rem;
     font-weight: 400;
     color: rgb(16, 111, 200);
 }
@@ -133,4 +166,14 @@ nav a:hover {
     font-size: 1.2rem;
     color: rgb(7, 41, 104);
     font-weight: 700;
+}
+
+.poster-container {
+    align-content: space-around;
+    justify-content: right;
+}
+
+.poster {
+    height: 310px;
+    width: auto;
 }

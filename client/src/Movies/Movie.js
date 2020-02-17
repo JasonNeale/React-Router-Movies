@@ -25,12 +25,14 @@ const Movie = (props) => {
         return <div>Loading movie information...</div>
     }
 
-    const { title, director, metascore, stars } = movie
-
     return (
-        <div className="row card-container">
-            <MovieCard key={movie.id} {...props} movie={movie} />
-            <div className="save-button btn btn-primary" onClick={saveMovie}>Save</div>
+        <div>
+            <div className="row card-container">
+                <MovieCard key={movie.id} {...props} movie={movie} />
+            </div>
+            <div className="row text-center button-row">
+                <div className="save-button btn btn-primary" onClick={saveMovie}>Save</div>
+            </div>
         </div>
     )
 }
