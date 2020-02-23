@@ -1,72 +1,179 @@
+html {
+    font-size: 62.5%;
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  background-color: #f2f2f2;
+    background-color: #edf2f7;
 }
 
-.movie-card {
-  background-color: #fff;
-  border: 0;
-  box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
-    0 2px 4px rgba(0, 0, 0, 0.24);
-  padding: 1rem;
-  cursor: pointer;
-  position: relative;
-  margin: 1rem auto;
+a {
+    text-decoration: none;
 }
 
-.movie-director {
-  padding: 4px 0;
-  font-size: 0.8rem;
+a:hover {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+*,
+::after,
+::before {
+    border-width: 0;
+    border-style: solid;
+    border-color: #e2e8f0;
 }
 
 .saved-list {
-  background-color: #fff;
-  border: 0;
-  box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
-    0 2px 4px rgba(0, 0, 0, 0.24);
-  padding: 1rem;
-  cursor: pointer;
-  position: relative;
-  margin: 1rem auto;
-  width: 75%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    background-color: #fff;
+    border: 0;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, .1), 0 10px 10px -5px rgba(0, 0, 0, .04);
+    padding: 1rem;
+    cursor: pointer;
+    position: relative;
+    margin: 1rem auto;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .saved-list h3 {
-  margin-right: 10px;
+    margin-right: 10px;
 }
 
 .saved-movie {
-  margin: 0 10px;
-}
-.saved-active {
-  color: blue;
-  border: 1px solid grey;
-  padding: 5px;
-}
-.save-wrapper {
-  position: relative;
-  width: 75%;
-  margin: 1rem auto;
-}
-.save-button {
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  border: 1px solid grey;
-  padding: 5px 10px;
-  background-color: lightseagreen;
-}
-.save-button:hover {
-  background-color: green;
-  color: white;
+    margin: 0 10px;
 }
 
-.home-button {
-  padding: 5px 10px;
-  background-color: lightskyblue;
+.saved-active {
+    color: blue;
+    border: 1px solid grey;
+    padding: 5px;
+}
+
+.save-wrapper {
+    position: relative;
+    width: 75%;
+    margin: 1rem auto;
+}
+
+.button-row {
+    justify-content: center;
+    padding: 40px;
+}
+
+.btn {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.page-container {
+    max-width: 980px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.card-container {
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    border: 0;
+    color: #333;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, .1), 0 10px 10px -5px rgba(0, 0, 0, .04);
+    border-radius: .5rem;
+}
+
+.card-big {
+    width: auto;
+    max-width: 500px;
+    height: auto;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 40px;
+    border: 0;
+    color: #333;
+    background-color: #fff;
+    text-align: left;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, .1), 0 10px 10px -5px rgba(0, 0, 0, .04);
+    border-radius: .5rem;
+}
+
+.card-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgb(16, 111, 200);
+}
+
+.title-row {
+
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.card-title-big {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: rgb(47, 47, 47);
+    text-decoration: underline;
+}
+
+.card-title-2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: rgb(16, 111, 200);
+}
+
+.card-title-2-big {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: rgb(16, 111, 200);
+}
+
+.card-btn {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 160px;
+}
+
+nav a {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+nav a.active {
+    font-size: 1.2rem;
+    color: rgb(10, 136, 41);
+    font-weight: 700;
+}
+
+nav a:hover {
+    font-size: 1.2rem;
+    color: rgb(7, 41, 104);
+    font-weight: 700;
+}
+
+.poster-container {
+    align-content: space-around;
+    justify-content: right;
+}
+
+.poster {
+    height: 310px;
+    width: auto;
 }
